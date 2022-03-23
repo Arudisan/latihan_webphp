@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
+.menukiri{
+    float: left;
+    display: block;
+    width: 20%;
+    background-color: red ;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    padding: 20px 20px 20px 20px;
+    height: 120vh;
+}
+#about{
+    background-color: rgb(255, 255, 69);
+    height: 120vh;
+}
+.fontcontact{
+ color: white;
+ font-weight: bold;
+ font-family: 'Courier New', Courier, monospace;
+}
+.fontsubcontact {
+ color: white;   
+ font-weight: bolder;
+ font-size: medium;
+ font-family: sans-serif;
+}
+.fontparagraf {
+font-weight: bolder;
+font-size: medium;
+text-align: center;
+
+}

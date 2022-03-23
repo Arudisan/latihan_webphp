@@ -1,0 +1,37 @@
+.navbar-BBrand {
+font-family: monospace ;
+color: white ;
+font-weight: bold; 
+}
+.span-nav {
+font-weight: bold;
+}
+.tulisan-header {
+font-family: 'Courier New', Courier, monospace;
+font-style: italic;
+font-weight: bolder;
+}
+.subkonten1 {
+background-color: rgb(255, 240, 240);
+}
+.subkonten2 {
+ background-color: rgb(255, 240, 240);
+}
+.subkonten3 {
+background-color: rgb(211, 140, 140);
+}
+.subkonten4 {
+  background-color: yellow
+}
+.font-1{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255) ;
+}
+.iconstyle{
+  font-size: 26px;
+  color: rgb(255, 255, 255);  
+}
+.fontsection{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
