@@ -64,8 +64,8 @@
     );
     foreach ($databrg as $m){
         echo $m["kode"].","."<br>" ;
-        echo $m["nama"].","."<br>" ;
-        echo $m["harga"].","."<br>" ;
+        /*echo $m["nama"].","."<br>" ;
+        echo $m["harga"].","."<br>" ;*/
     }
     echo "<br>";
     echo "<hr>";
