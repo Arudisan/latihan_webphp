@@ -13,8 +13,7 @@
        <marquee behavior=" " direction=""scrollamount="20 " > BeLajar Web Programming </marquee>
    </header>
    <div class="row">
-       
-       <div class="col-md-2 bg-danger"> 
+       <div class="col-md-2"> 
         <div class="row"><h5> Menu kiri</h5></div>
         <div class="col"> 
         <?php 
@@ -25,13 +24,13 @@
         );
         foreach ($menu as $mn){
        ?>
-        <ul>
-                <a href="<?php echo $mn['link'] ?>"><li><?php echo $mn['nm_menu'] ?></li></a>
-            </ul>
+       <a href="<?php echo $mn['link'] ?>">
+           <li class="list-group-item"><?php echo $mn['nm_menu'];?></li>
+        </a>  
             <?php } ?>
         </div>
        </div>  
-       <div class="col-md-10 bg-info "> </div>
+       <div class="col-md-10"> </div>
    </div>
 </body>
 </html>

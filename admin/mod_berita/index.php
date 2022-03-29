@@ -9,7 +9,7 @@
 </head>
 <body>
 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#kontenModel">Tambah</button>
-    <table border="3" cellpadding="10" cellspacing="3" > 
+    <table border="5" cellpadding="3" cellspacing="3" > 
         <tr>
             <th >ID</th>
             <th> Judul</th>
@@ -48,18 +48,26 @@
               <div class="alert alert-danger" role="alert" id="alert" style="display: none"></div>
               <div class="alert alert-success" role="alert" id="alertok" style="display: none"></div>
               <div class="form-group">
+                <h6> ID </h6>
+                <input type="text" id="loguser" class="form-control">
+              </div>              
+              <div class="form-group">
                 <h6> Judul </h6>
                 <input type="text" id="loguser" class="form-control">
               </div>
               <div class="form-group">
-                 <h6> Konten </h6> 
+                <h6> Konten </h6>
+                <input type="text" id="loguser" class="form-control">
+              </div>
+              <div class="form-group">
+                 <h6> action </h6> 
                  <input type="password" id="logpass" class="form-control">
               </div>
               <br>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Batal </button>
-              <button type="button" class="btn btn-primary" onclick="">login</button>
+              <button type="button" class="btn btn-primary" onclick="">Tambah</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Hapus </button>
             </div>
           </div>
         </div>
