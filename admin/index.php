@@ -10,11 +10,12 @@
   </head>
   <!-- onload="alert('Halloo');" -->
   <body id="loginpage" onload="">
-    <div class="container d-flex justify-content-center mt-5 pt-5">
-      <form class="bg-light p-5">
+    <div class="container d-flex justify-content-center mt-3 pt-4">
+      <form class="bg-light p-4">
         <div class="alert alert-danger" role="alert" id="alert" style="display: none"></div>
         <div class="alert alert-success" role="alert" id="alertok" style="display: none"></div>
-        <div id="judul" class="mt-3"></div>
+        <div id="judul" class="mt-3"> </div>
+        <div class="text-center"><h6>PLEASE LOGIN !</h6></div>
         <hr />
         <div class="mb-4">
           <label for="username" class="form-label">Username</label>
@@ -24,8 +25,12 @@
           <label for="password" class="form-label">Password</label>
           <input type="password" class="form-control" id="password" />
         </div>
-        <button type="button" class="btn btn-primary" onclick="ceklogin()">Login</button>
-        <a href="../index.php" class="ps-5"> Home </a>
+        <div class="row">
+          <div class="col-md-3"><button type="button" class="btn btn-primary" onclick="ceklogin()">Login</button> </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-3"><a href="../index.php" class="btn btn-primary"> Home </a></div>
+        </div>
+        <div class="text-center pt-3" style="font-size: x-small">  Created by rudikun </div>
       </form>
     </div>
     <!-- modal untuk tampilkan loading -->

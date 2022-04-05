@@ -11,8 +11,8 @@
 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#kontenModel">Tambah</button>
     <table border="5" cellpadding="3" cellspacing="3" > 
         <tr>
-            <th >ID</th>
-            <th> Judul</th>
+            <th>   ID   </th>
+            <th> Judul  </th>
             <th> Konten </th>
             <th> action </th>
         </tr>

@@ -58,12 +58,8 @@
   <section class="subkonten2" id="about">
     <div class="container-fluid align-items-center d-flex flex-column pb-5">
       <h2 class="text-dark fw-bold pb-2 pt-3 fontsection"> >>>> About Me <<<< </h2>
-      <div class="row">
-        <div class="col-md-3"> oorem </div>
-        <div class="col-md-6 text-center"> Nama saya ardi,saya dari program IPS,saya mempunyai hobby yaitu bermain game di PC maupun mobile.Dari hal tersebut saya mempunyai minat di bidang IT sehingga saya belajar di LP3I untuk mendalami tentang IT dan mengambil program ASE
+      <div class="col-md-6"> Nama saya ardi,saya dari program IPS,saya mempunyai hobby yaitu bermain game di PC maupun mobile.Dari hal tersebut saya mempunyai minat di bidang IT sehingga saya belajar di LP3I untuk mendalami tentang IT dan mengambil program ASE
         </div>
-      </div>
-    <div class="col-md-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis blanditiis, expedita, maxime voluptatum porro id repellendus totam incidunt error sed vel ipsa quasi qui soluta quibusdam esse quaerat praesentium explicabo. </div>
   </div>
   </section>
 <!-- section Blog 1 blog 2  -->
