@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-
    <header> 
        <marquee behavior=" " direction=""scrollamount="20 " > BeLajar Web Programming </marquee>
    </header>
