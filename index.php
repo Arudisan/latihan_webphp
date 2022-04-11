@@ -69,7 +69,7 @@
        <h2 class="text-dark fw-bold pb-2 pt-5 fontsection"> >>>> My Blog <<<< </h2>
         </div>
           <div class="container-fluid justify-content-center d-flex flex-row pb-4">
-             <div class="row">
+             <div class="row" style="align-items: center;">
                 <div class="col-md-4 text-end"><img src="img/Logo Microsoft word.png" class="rounded-circle mt-2 border-1"
             width="150" alt=""></div>
         <div class="col-md-6">
