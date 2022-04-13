@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+require_once('../config/koneksi_db.php') ;
+require_once('../config/config.php') ;
+?>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,7 +30,7 @@
           <input type="password" name="password" class="form-control" id="password" />
         </div>
         <div class="row">
-          <div class="col-md-3"><button type="submit" class="btn btn-primary">Login</button> </div>
+          <div class="col-md-3"><button type="submit" name="btnlogin" class="btn btn-primary">Login</button> </div>
           <div class="col-md-4"></div>
           <div class="col-md-3"><a href="../index.php" class="btn btn-primary"> Home </a></div>
         </div>

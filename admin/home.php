@@ -15,21 +15,18 @@
        <div class="col-md-2"> 
         <div class="row"><h5> Menu kiri</h5></div>
         <div class="col"> 
-        <?php 
-        $menu = array (
-            array ( "id"=>"01","nm_menu"=>"dashboard","link"=>""),
-            array ( "id"=>"02","nm_menu"=>"Blog","link"=>""),
-            array ( "id"=>"03","nm_menu"=>"Berita","link"=>"mod_berita")
-        );
-        foreach ($menu as $mn){
-       ?>
-       <a href="<?php echo $mn['link'] ?>">
-           <li class="list-group-item"><?php echo $mn['nm_menu'];?></li>
-        </a>  
-            <?php } ?>
+            <?php
+           include_once('menu.php') ;
+           ?>
         </div>
        </div>  
-       <div class="col-md-10"> </div>
+       <div class="col-md-10"> 
+           <?php
+           if(isset($_GET['modul'])){
+               include "".$_GET['modul']."/index.php";
+           }
+           ?>
+       </div>
    </div>
 </body>
 </html>
