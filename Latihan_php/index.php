@@ -14,7 +14,7 @@
     $hasilmin = $nilai1 - $nilai2;
     $hasilkali = $nilai1 * $nilai2;
     $hasilbagi = $nilai1 / $nilai2;
-    $hasilpangkat = $nilai1 ** $nilai2;
+    $hasilpangkat =$nilai1**$nilai2;
     $hasilbagi = $nilai1 % $nilai2;
     echo "Belajar PHP Mudah";
     echo "<br> <input type='text' placeholder='nilai 1' value =".$nilai1.">

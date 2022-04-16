@@ -9,14 +9,14 @@
 <body>
     <?php
     $nilai = array (60,70,80,75,90) ;
-    sort($nilai);
+    asort($nilai);
     echo '<br>';
     var_dump($nilai);
     echo '<br>'.$nilai[0];
     $namamhs = array("dina"=> 80,"sinta"=> 90,"Nia"=> 85);
     echo '<br>';
     var_dump($namamhs);
-    echo'<br>'.$namamhs["sinta"];
+    echo'<br>'.$namamhs[0].'<br>';
     for($i=2; $i <=13; $i++){
        echo$i."," ; 
     }

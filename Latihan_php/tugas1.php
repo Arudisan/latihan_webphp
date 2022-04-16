@@ -10,13 +10,13 @@
 </head>
 <body>
     <?php
-    /*echo " isi dari file B <br> " ; 
+    echo " isi dari file B <br> " ; 
     include 'includes/../stringfc.php';
     include_once 'includes/../../index.php';
-    include 'includes/../latihan_array.php';*/
-    /*define('Nama','Muhammad Ardiansyah');
-    echo Nama ;*/
-    /*echo "Contoh fungsi explode";
+    include 'includes/../latihan_array.php';
+    define('Nama','Muhammad Ardiansyah');
+    echo Nama ;
+    echo "Contoh fungsi explode";
      echo "<br>" ;
 
      $kalimat = "Saya sedang belajar fungsi explode implode" ;
@@ -33,11 +33,11 @@
      echo "<br>" ;
      echo "contoh fungsi implode " ;
      echo "<br>" ;
-     echo implode(" ",$kalimat) ;*/
-    /*$kata = "saya sedang berpuasa       " ;
+     echo implode(" ",$kalimat) ;
+    $kata = "saya sedang berpuasa       " ;
     echo $kata . "<br>" ;
-    echo trim($kata);*/
-    /*echo "ini contoh fungsi strrchr "."<br>" ;
+    echo trim($kata);
+    echo "ini contoh fungsi strrchr "."<br>" ;
     echo strrchr("hello world! what a beautiful day!","what")."<br>" ;
     echo "<hr/>";
     echo "ini contoh fungsi substr "."<br>" ;
@@ -57,8 +57,8 @@
     echo "ini contoh fungsi explode "."<br>" ;
     $kalimat = "Saya sedang belajar fungsi explode implode" ;
     $kalimat = explode(" ",$kalimat);
-    print_r($kalimat);*/
-    /*echo "Pembulatan Dengan <b>Round() Pembulatan biasa </b>";
+    print_r($kalimat);
+    echo "Pembulatan Dengan <b>Round() Pembulatan biasa </b>";
     echo "round(5.7) = ".round(5.7)."<br>";
     echo "<hr/>";
     echo "Pembulatan Dengan <b>ceil() Pembulatan Keatas </b>";
@@ -66,7 +66,7 @@
     echo "<hr/>";
     echo "Pembulatan Dengan <b>floor() Pembulatan kebawah</b>";
     echo "floor(5.7) = ".floor(5.7)." //<b>pembulatan kebawah<br>";
-    echo "<hr/>";*/
+    echo "<hr/>";
     
     
     
