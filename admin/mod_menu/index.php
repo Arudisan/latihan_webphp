@@ -40,10 +40,9 @@
     </div>
     <div class="row pt-2">
     <div class="col-md-2"> 
-    <label for="username" class="form-label"> Nama Menu </label>
   </div>  
   <div class="col-md-5"> 
-    <input type="text "name="" class="form-control">  
+   <input type="checkbox"/> active
     </div>
     <div class="col-md-1"></div>
     </div>

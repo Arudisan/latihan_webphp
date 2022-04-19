@@ -13,10 +13,12 @@ require_once('../config/config.php') ;
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 <body>
-   <header> 
-       <marquee behavior=" " direction=""scrollamount="20 " > BeLajar Web Programming </marquee>
-   </header>
-   <div class="row">
+<nav class="navbar navbar-light bg-dark fixed-top">
+  <div class="container-fluid d-flex">
+    <b><a class="navbar-brand" style="color:white;" href="#"> LP3I BC SURABAYA </a></b>
+  </div>
+</nav>
+   <div class="row pt-2">
        <div class="col-md-2"> 
         <div class="row"><h5> Menu kiri</h5></div>
         <div class="col"> 
@@ -25,13 +27,19 @@ require_once('../config/config.php') ;
            ?>
         </div>
        </div>  
-       <div class="col-md-10"> 
+       <div class="col-md-10 pt-4"> 
            <?php
            if(isset($_GET['modul'])){
                include "".$_GET['modul']."/index.php";
            }
            ?>
        </div>
+       <div class="col-md-1"> 
    </div>
 </body>
+<footer class="footer bg-dark" style="position:fixed; bottom:0 ; " >
+    <div class="row">
+      <b><h6 style="color:white;"> <i class="bi bi-code"> </i> Design by Arudi </h6></b> 
+    </div>
+</footer>
 </html>
