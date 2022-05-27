@@ -1,4 +1,5 @@
 <?php
+session_start() ;
 require_once('../config/koneksi_db.php') ;
 require_once('../config/config.php') ;
 ?>
@@ -14,8 +15,10 @@ require_once('../config/config.php') ;
 </head>
 <body>
 <nav class="navbar navbar-light bg-dark fixed-top">
-  <div class="container-fluid d-flex">
+  <div class="container-fluid d-flex" style="color:white;">
     <b><a class="navbar-brand" style="color:white;" href="#"> LP3I BC SURABAYA </a></b>
+    <?php echo "Selamat Datang ".$_SESSION['userlogin'] ;?>
+    <a class="nav-link active" aria-current="page" href="logout.php" style="color: white;">  <b> | Sign Out</b></a>
   </div>
 </nav>
    <div class="row pt-2">

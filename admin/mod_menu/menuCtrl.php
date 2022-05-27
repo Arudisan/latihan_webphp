@@ -6,7 +6,7 @@ require_once('../../config/config.php') ;
     require_once('../config/koneksi_db.php') ;
     require_once('../config/config.php') ;
 }
-
+security_login() ;
 if (isset($_GET['act']) && ($_GET['act']== "add")){
     $judul = "form input data" ;
 }else if (isset($_GET['act']) && ($_GET['act']== "edit")){
