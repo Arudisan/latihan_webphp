@@ -21,9 +21,10 @@ if (isset($_GET['act']) && ($_GET['act']== "add")){
     $konten = $_POST['konten'];
     $autor = $_POST ['author'];
     $dateinput = $_POST['inputdate'];
+    $foto = $_POST['Photo_profil'];
     echo $judul ; 
-    mysqli_query($connect_db,"insert into mst_blog (judul,id_kategori,konten,author,dateinput)
-    values ('$judul','$idkategori','$konten','$autor','$dateinput')") or die(mysqli_error($connect_db))
+    mysqli_query($connect_db,"insert into mst_blog (judul,id_kategori,konten,author,dateinput,Photo_profil)
+    values ('$judul','$idkategori','$konten','$autor','$dateinput','$foto')") or die(mysqli_error($connect_db))
     ; 
 }else if(isset($_GET['act']) && ($_GET['act']== "update")){
     $idblok = $_POST['id_blog'];
@@ -32,8 +33,9 @@ if (isset($_GET['act']) && ($_GET['act']== "add")){
     $konten = $_POST['konten'];
     $autor = $_POST ['author'];
     $dateinput = $_POST['inputdate'];
+    $foto = $_POST['Photo_profil'];
         $qinsert = mysqli_query($connect_db, 
-        "UPDATE mst_blog SET judul='$judul', id_kategori='$idkategori',konten='$konten',author='$autor',dateinput='$dateinput' WHERE id_blog='$idblok'")
+        "UPDATE mst_blog SET judul='$judul', id_kategori='$idkategori',konten='$konten',author='$autor',dateinput='$dateinput',Photo_profil='$foto' WHERE id_blog='$idblok'")
         or die (mysqli_error($connect_db));
         if($qinsert){
             header("Location: http://localhost/latihan_webphp/admin/home.php?modul=mod_blog");

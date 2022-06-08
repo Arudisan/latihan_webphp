@@ -13,6 +13,7 @@
                 <th> Konten </th>
                 <th> Author</th>
                 <th> Dateinput </th>
+                <th> foto </th>
                 <th> Action </th>
             <?php
             $qry_listmenu= mysqli_query($connect_db,"select * from mst_blog order by id_blog DESC")or die("gagal akses tabel mst_blog".mysqli_error($connect_db));
@@ -25,6 +26,7 @@
                 <td><?php echo $row['konten'];?></td>
                 <td><?= $row['author']; ?></td>
                 <td><?php echo $row['dateinput']; ?></td>
+                <td><?php echo $row['Photo_profil']; ?></td>
                 <td>
                     <div class="d-grid gap-1 d-md-block">
                     <a href="?modul=mod_blog&act=edit&id=<?= $row['id_blog']; ?>" class="btn btn-xs btn-primary"> <i class="bi bi-pencil-square" > </i> edit </a>
@@ -101,6 +103,15 @@
         <input type="date" name="inputdate"> </div>
             <div class="col-md-1"></div>
             </div>
+            <div class="row pt-2">
+            <div class="col-md-2"> 
+            <label for="myfile" name="Photo_profil">Select a file:</label>>
+        </div>  
+        <div class="col-md-5"> 
+        <input type="file" id="myfile" name="Photo_profil">
+            <div class="col-md-1"></div>
+            </div>
+         </div>
             <div class="row pt-2">
             <div class="col-md-2">
                 </div>  
@@ -181,6 +192,15 @@
             <input type="date" id="start" name="inputdate" value="<?php echo $data['dateinput'];?>"> </div>
                 <div class="col-md-1"></div>
                 </div>
+                <div class="row pt-2">
+            <div class="col-md-2"> 
+            <label for="myfile" name="Photo_profil">Select a file:</label>>
+        </div>  
+        <div class="col-md-5"> 
+        <input type="file" id="myfile" name="Photo_profil">
+            <div class="col-md-1"></div>
+            </div>
+         </div>
                 <div class="row pt-2">
                 <div class="col-md-2">
                     </div>  

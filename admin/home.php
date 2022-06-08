@@ -2,6 +2,7 @@
 session_start() ;
 require_once('../config/koneksi_db.php') ;
 require_once('../config/config.php') ;
+include_once ('../admin/mod_blog/blogCtrl.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +18,16 @@ require_once('../config/config.php') ;
 <nav class="navbar navbar-light bg-dark fixed-top">
   <div class="container-fluid d-flex" style="color:white;">
     <b><a class="navbar-brand" style="color:white;" href="#"> LP3I BC SURABAYA </a></b>
-    <?php echo "Selamat Datang ".$_SESSION['userlogin'] ;?>
+    <?php
+            $photo= mysqli_query($connect_db,"select * from mst_blog where id_blog = 36")or die("gagal akses tabel mst_blog".mysqli_error($connect_db));
+            while($row = mysqli_fetch_array($photo)){
+            ?>
+            <img src="<?php echo $row['Photo_profil'];?>" width="10px" height="10px">
+            <?php
+            }
+            ?>
+    <?php echo "Selamat Datang ".$_SESSION['userlogin'] ;
+    ?>
     <a class="nav-link active" aria-current="page" href="logout.php" style="color: white;">  <b> | Sign Out</b></a>
   </div>
 </nav>
