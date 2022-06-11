@@ -2,7 +2,6 @@
 session_start() ;
 require_once('../config/koneksi_db.php') ;
 require_once('../config/config.php') ;
-include_once ('../admin/mod_blog/blogCtrl.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,19 +12,21 @@ include_once ('../admin/mod_blog/blogCtrl.php');
     <title>Admin Home</title>
     <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://cdn.tiny.cloud/1/ro6hu6c8nuys6jlwuzo8vnlb4l0m10xmfgbm4cbia762rcn6/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+	  tinymce.init({
+		selector: 'textarea#editor',
+		skin: 'bootstrap',
+		plugins: 'lists, link, image, media',
+		toolbar: 'h1 h2 bold italic strikethrough blockquote bullist numlist backcolor | link image media | removeformat help',
+		menubar: false,
+	});
+	</script>
 </head>
 <body>
 <nav class="navbar navbar-light bg-dark fixed-top">
   <div class="container-fluid d-flex" style="color:white;">
     <b><a class="navbar-brand" style="color:white;" href="#"> LP3I BC SURABAYA </a></b>
-    <?php
-            $photo= mysqli_query($connect_db,"select * from mst_blog where id_blog = 36")or die("gagal akses tabel mst_blog".mysqli_error($connect_db));
-            while($row = mysqli_fetch_array($photo)){
-            ?>
-            <img src="<?php echo $row['Photo_profil'];?>" width="10px" height="10px">
-            <?php
-            }
-            ?>
     <?php echo "Selamat Datang ".$_SESSION['userlogin'] ;
     ?>
     <a class="nav-link active" aria-current="page" href="logout.php" style="color: white;">  <b> | Sign Out</b></a>

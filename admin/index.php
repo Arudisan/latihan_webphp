@@ -32,7 +32,7 @@ require_once('../config/config.php') ;
         <div class="row">
           <div class="col-md-3"><button type="submit" name="btnlogin" class="btn btn-primary">Login</button> </div>
           <div class="col-md-4"></div>
-          <div class="col-md-3"><a href="../index.php" class="btn btn-primary"> Home </a></div>
+          <div class="col-md-3"><a href="../index2.php" class="btn btn-primary"> Home </a></div>
         </div>
         <div class="text-center pt-3" style="font-size: x-small">  Created by rudikun </div>
       </form>

@@ -26,7 +26,7 @@
                 <td><?php echo $row['konten'];?></td>
                 <td><?= $row['author']; ?></td>
                 <td><?php echo $row['dateinput']; ?></td>
-                <td><?php echo $row['Photo_profil']; ?></td>
+                <td><?php echo $row['gambar']; ?></td>
                 <td>
                     <div class="d-grid gap-1 d-md-block">
                     <a href="?modul=mod_blog&act=edit&id=<?= $row['id_blog']; ?>" class="btn btn-xs btn-primary"> <i class="bi bi-pencil-square" > </i> edit </a>
@@ -83,7 +83,7 @@
             <label for="username" class="form-label" name="konten" >Konten </label>
         </div>  
         <div class="col-md-5"> 
-            <textarea type="text" name="konten"  cols="59" rows="5" > Masukkan Isi Berita </textarea>
+            <textarea type="text" name="konten" id="editor" cols="59" rows="5" class="form-control" > Masukkan Isi Berita </textarea>
             </div>
             <div class="col-md-1"></div>
             </div>
@@ -105,10 +105,10 @@
             </div>
             <div class="row pt-2">
             <div class="col-md-2"> 
-            <label for="myfile" name="Photo_profil">Select a file:</label>>
+            <label for="myfile" name="gambar" >Upload Gambar/Foto </label>
         </div>  
         <div class="col-md-5"> 
-        <input type="file" id="myfile" name="Photo_profil">
+        <input type="file" id="myfile" name="gambar">
             <div class="col-md-1"></div>
             </div>
          </div>
@@ -194,10 +194,10 @@
                 </div>
                 <div class="row pt-2">
             <div class="col-md-2"> 
-            <label for="myfile" name="Photo_profil">Select a file:</label>>
+            <label for="myfile" name="Photo_profil">Upload Gambar/foto</label>
         </div>  
         <div class="col-md-5"> 
-        <input type="file" id="myfile" name="Photo_profil">
+        <input type="file" id="myfile" name="gambar">
             <div class="col-md-1"></div>
             </div>
          </div>

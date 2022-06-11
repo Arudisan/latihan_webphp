@@ -19,7 +19,7 @@ echo $txt_pass;*/
 if(isset($_POST['btnlogin'])){
     $txt_user = $_POST['username'];
     $txt_pass = md5($_POST['password']);
-    $result = mysqli_query($connect_db,"select * from mst_userlogin where username ='".$txt_user."' AND password ='".$txt_pass."' AND is_active=1");
+    $result = mysqli_query($connect_db,"select * from mst_userlogin where username ='".$txt_user."' AND password ='".$txt_pass."'");
     if(mysqli_num_rows($result)> 0){
         session_start();
         $_SESSION['userlogin']= $txt_user ;
