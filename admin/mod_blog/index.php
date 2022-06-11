@@ -42,7 +42,7 @@
         ?>
         <div class="row">
             <h3><?php echo $judul; ?></h3>
-            <form action="mod_blog/blogCtrl.php?modul=mod_blog&act=save" method="post">
+            <form action="mod_blog/blogCtrl.php?modul=mod_blog&act=save" method="post" enctype="multipart/form-data">
             <div class="row pt-2">
                 <div class="col-md-2"> 
             </div>  
@@ -108,7 +108,7 @@
             <label for="myfile" name="gambar" >Upload Gambar/Foto </label>
         </div>  
         <div class="col-md-5"> 
-        <input type="file" id="myfile" name="gambar">
+        <input type="file" id="myfile" name="gambar" class="form-control">
             <div class="col-md-1"></div>
             </div>
          </div>
@@ -194,7 +194,7 @@
                 </div>
                 <div class="row pt-2">
             <div class="col-md-2"> 
-            <label for="myfile" name="Photo_profil">Upload Gambar/foto</label>
+            <label for="myfile" >Upload Gambar/foto</label>
         </div>  
         <div class="col-md-5"> 
         <input type="file" id="myfile" name="gambar">

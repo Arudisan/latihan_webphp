@@ -102,13 +102,14 @@ require_once("config/config.php");
 		<div class="container-fluid d-flex flex-column align-items-center p-4">
 			<h1 class="text-primary text-opacity-100 pb-3">=== My Blog ===</h1>
 			<?php
+			include ('admin/mod_blog/blogCtrl.php') ;
             $qry_listmenu= mysqli_query($connect_db,"select * from mst_blog ")or die("gagal akses tabel mst_blog".mysqli_error($connect_db));
             while($row = mysqli_fetch_array($qry_listmenu)){
             ?>
 			<div class="row mb-4">
 				<div class="col-md-2"></div>
 				<div class="col-md-2">
-					<img src="../../assets/img/<?php echo $row['gambar'];?>" width="270" class="img-fluid img-thumbnail" />
+					<img src="asset/img/<?php echo $namafile;?>" width="270"/>
 				</div>
 				<div class="col-md-6">
 					<h4><?php echo $row['judul'];?></h4>
