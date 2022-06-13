@@ -1,5 +1,5 @@
-        <?php
-        include_once ('blogCtrl.php');
+<?php
+        include_once ('blgCtrl.php');
         ?>
         <?php
         if(!isset($_GET['act'])){
@@ -197,7 +197,7 @@
             <label for="myfile" >Upload Gambar/foto</label>
         </div>  
         <div class="col-md-5"> 
-        <input type="file" id="myfile" name="gambar">
+        <input type="file" id="myfile" name="gambar" value="<?php echo $row['gambar'];?>">
             <div class="col-md-1"></div>
             </div>
          </div>

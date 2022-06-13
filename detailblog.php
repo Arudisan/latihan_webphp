@@ -62,13 +62,13 @@ require_once("config/config.php");
         </div>
       </div>
     </nav>
-
     <!-- blog -->
     <section id="blog" class="bg-white">
       <div class="container d-flex flex-column align-items-center p-4">
         <h1 class="text-primary text-opacity-100 pb-3">=== My Blog ===</h1>
         <?php
-            $qry_listmenu= mysqli_query($connect_db,"select * from mst_blog ")or die("gagal akses tabel mst_blog".mysqli_error($connect_db));
+        $id_blog= $_GET['id'];
+            $qry_listmenu= mysqli_query($connect_db,"select * from mst_blog where id_blog='$id_blog'")or die("gagal akses tabel mst_blog".mysqli_error($connect_db));
             while($row = mysqli_fetch_array($qry_listmenu)){
             ?>
         <div class="row mb-4">
@@ -79,7 +79,7 @@ require_once("config/config.php");
               <span class="fs-6"><i class="bi bi-calendar"></i> <?php echo $row['dateinput'];?>, Created By : <?php echo $row['author'];?></span>
               <hr />
             </div>
-            <img src=" <?php echo $row['gambar'];?>" width="500" class="img-thumbnail img-fluid mx-auto d-block" />
+            <img src="asset/img/<?php echo $row['gambar'];?>" width="150px" height="200px"/>
             <p class="justify-content-evenly">
             <?php echo $row['konten'];?>
             </p>

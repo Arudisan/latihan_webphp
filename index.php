@@ -118,7 +118,7 @@ require_once("config/config.php");
 						<span class="text-primary fs-6">Created By : <?php echo $row['author'];?></span>
 					</div>
 					<p> <?php echo $row['konten'];?></p>
-					<a href="?detailblog.php&id=<?= $row['id_blog']; ?>"> lihat detail</a>
+					<a href="detailblog.php?id=<?= $row['id_blog']; ?>"> lihat detail</a>
 					<hr />
 				</div>
 			</div>
