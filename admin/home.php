@@ -14,14 +14,15 @@ require_once('../config/config.php') ;
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <script src="https://cdn.tiny.cloud/1/ro6hu6c8nuys6jlwuzo8vnlb4l0m10xmfgbm4cbia762rcn6/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
-	  tinymce.init({
-		selector: 'textarea#editor',
-		skin: 'bootstrap',
-		plugins: 'lists, link, image, media',
-		toolbar: 'h1 h2 bold italic strikethrough blockquote bullist numlist backcolor | link image media | removeformat help',
-		menubar: false,
-	});
-	</script>
+    tinymce.init({
+      selector: 'textarea#mytextarea',
+      plugins: 'a11ychecker advcode casechange export formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+      toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table',
+      toolbar_mode: 'floating',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+    });
+  </script>
 </head>
 <body>
 <nav class="navbar navbar-light bg-dark fixed-top">

@@ -4,6 +4,7 @@ include_once ('respondenctrl.php');
         <?php
         if(!isset($_GET['act'])){
         ?>
+        <h4 style="text-align: center" class="pb-1"> <b> Data Responden Main Page  </b></h4>
         <table class="table table-bordered "> 
             <tr> 
                 <th> Id Responden</th>

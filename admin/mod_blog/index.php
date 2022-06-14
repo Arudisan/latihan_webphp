@@ -1,5 +1,6 @@
 <?php
         include_once ('blgCtrl.php');
+        
         ?>
         <?php
         if(!isset($_GET['act'])){
@@ -42,7 +43,7 @@
         ?>
         <div class="row">
             <h3><?php echo $judul; ?></h3>
-            <form action="mod_blog/blogCtrl.php?modul=mod_blog&act=save" method="post" enctype="multipart/form-data">
+            <form action="mod_blog/blgCtrl.php?modul=mod_blog&act=save" method="post" enctype="multipart/form-data">
             <div class="row pt-2">
                 <div class="col-md-2"> 
             </div>  
@@ -80,15 +81,15 @@
             </div>
             <div class="row pt-2">
             <div class="col-md-2"> 
-            <label for="username" class="form-label" name="konten" >Konten </label>
+            <label for="username" class="form-label"  >Konten </label>
         </div>  
         <div class="col-md-5"> 
-            <textarea type="text" name="konten" id="editor" cols="59" rows="5" class="form-control" > Masukkan Isi Berita </textarea>
-            </div>
+        <textarea class="form-control" id="mytextarea" cols="30" rows="10" name="konten"></textarea>
+            <!-- </div>
             <div class="col-md-1"></div>
             </div>
             <div class="row pt-2">
-            <div class="col-md-2"> 
+            <div class="col-md-2">  -->
         </div>  
         <div class="col-md-5"> 
         <input type="hidden" name="author" class="form-control" value="<?php echo $_SESSION['userlogin'] ;?>">
